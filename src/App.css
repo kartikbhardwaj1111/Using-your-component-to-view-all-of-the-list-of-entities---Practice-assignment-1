@@ -1,3 +1,4 @@
+/* Existing styles */
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -39,4 +40,46 @@
 
 .read-the-docs {
   color: #888;
+}
+
+/* BookCard Styles */
+.book-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  flex: 0 0 auto; /* Prevent flex items from shrinking */
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.book-card h2 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.book-card h3 {
+  margin: 5px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.book-card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+/* New styles for horizontal layout */
+.book-list {
+  display: flex;
+  overflow-x: auto; /* Add horizontal scroll if needed */
+  gap: 10px; /* Add space between books */
+  padding: 10px 0; /* Add some padding */
 }
